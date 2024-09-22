@@ -8,7 +8,7 @@ __pycache__/
 *.txt
 test.py
 *_notes.md
-
+.idea/
 
 # Distribution / packaging
 .Python
