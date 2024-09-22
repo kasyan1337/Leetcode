@@ -5,13 +5,6 @@ This repository stores my daily LeetCode challenges, organized by difficulty lev
 
 ## Structure 📂
 
-Each folder is categorized based on the difficulty level of the problem and where it was solved:
-- **China/**: Contains problems solved while I was in China.
-  - **Easy/**: Easy problems solved in China.
-  - **Medium/**: Medium problems solved in China.
-  - **Hard/**: Hard problems solved in China.
-- **Easy/**, **Medium/**, **Hard/**: Problems solved after returning, categorized by difficulty.
-
 
 - **China/**: Contains problems I solved while I was in China. The subfolders inside (`Easy`, `Medium`, and `Hard`) represent the difficulty levels of the problems solved during that time.
 - **Easy/**, **Medium/**, **Hard/**: After returning, I organized the new challenges by their difficulty level, with each folder containing solutions to problems from LeetCode.
