@@ -24,7 +24,8 @@ def create_files_in_directory(directory):
     folder_number = get_folder_number(folder_name)
 
     if folder_number:
-        files_to_create = [f'{folder_number}_solution.py', f'{folder_number}_notes.txt', f'{folder_number}_task.md']
+        files_to_create = [f'{folder_number}_solution.py', f'{folder_number}_notes.md', f'{folder_number}_task.md',
+                           f'{folder_number}_notes.txt']
     else:
         files_to_create = ['solution.py', 'notes.txt', 'task.md']
 
@@ -69,3 +70,4 @@ if __name__ == '__main__':
     os.remove('solution.py')
     os.remove('notes.txt')
     os.remove('task.md')
+    os.remove('notes.md')
