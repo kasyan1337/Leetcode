@@ -6,6 +6,7 @@ skip_whole_folders = ['China', '.git', '.idea']
 # Folders to skip for certain actions
 skip_folder = ['Easy', 'Hard', 'Medium']
 
+
 def get_folder_number(folder_name):
     """
     Extracts the leading number from the folder name if present.
@@ -14,6 +15,7 @@ def get_folder_number(folder_name):
     if match:
         return match.group(1)  # Return the number as a string
     return None
+
 
 def create_files_in_directory(directory):
     """
@@ -24,7 +26,7 @@ def create_files_in_directory(directory):
     folder_number = get_folder_number(folder_name)
 
     if folder_number:
-        files_to_create = [f'{folder_number}_solution.py', f'{folder_number}_notes.md', f'{folder_number}_task.md',
+        files_to_create = [f'{folder_number}_solution.py', f'{folder_number}_explanation.md', f'{folder_number}_task.md',
                            f'{folder_number}_notes.txt']
     else:
         files_to_create = []
@@ -40,6 +42,7 @@ def create_files_in_directory(directory):
                 elif 'task.md' in file_name:
                     f.write("# Task description\n")
             print(f"Created {file_name} in {directory}")
+
 
 def traverse_and_create_files(root_dir):
     """
@@ -59,6 +62,7 @@ def traverse_and_create_files(root_dir):
 
         # Create necessary files in the current directory
         create_files_in_directory(dirpath)
+
 
 if __name__ == '__main__':
     # Set the root directory (current working directory in this case)
