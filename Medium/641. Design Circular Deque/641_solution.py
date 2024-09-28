@@ -69,14 +69,3 @@ class MyCircularDeque:
     # Step 9: Check if the toy box is full
     def isToyBoxFull(self) -> bool:
         return self.current_size == self.capacity  # If the box is full, no more toys!
-
-# Your MyCircularDeque object will be instantiated and called as such:
-# obj = MyCircularDeque(k)
-# param_1 = obj.insertFront(value)
-# param_2 = obj.insertLast(value)
-# param_3 = obj.deleteFront()
-# param_4 = obj.deleteLast()
-# param_5 = obj.getFront()
-# param_6 = obj.getRear()
-# param_7 = obj.isEmpty()
-# param_8 = obj.isFull()
